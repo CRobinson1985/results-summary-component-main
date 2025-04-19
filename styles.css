@@ -13,10 +13,10 @@ body {
   padding: 0;
   display: flex;
   align-items: center;
-
 }
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -24,24 +24,24 @@ body {
 #main-div {
   background-color: white;
   width: 100vw;
-  
   box-sizing: border-box;
   padding: 0 0px;
-  
 }
 #result-div {
   border-radius: 0px 0px 25px 25px;
-  background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: linear-gradient(
+    180deg,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
   width: 100vw;
   justify-items: center;
   align-content: center;
   padding: 0% 15% 10% 15%;
   margin: 0%;
-
 }
 p {
   text-align: center;
-  
 }
 #result-circle {
   display: flexbox;
@@ -49,7 +49,11 @@ p {
   border-radius: 50%;
   width: 150px;
   height: 150px;
-  background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  background-image: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
 }
 #text-76 {
   position: relative;
@@ -57,7 +61,6 @@ p {
   justify-content: center;
   font-weight: 900;
   top: 24px;
-
 }
 #circle-100 {
   display: flex;
@@ -96,7 +99,7 @@ h3 {
   color: hsl(0, 100%, 67%);
 }
 .orangey-yellow {
-color: hsl(39, 100%, 56%);
+  color: hsl(39, 100%, 56%);
 }
 .green-teal {
   color: hsl(166, 100%, 37%);
@@ -128,21 +131,28 @@ color: hsl(39, 100%, 56%);
   align-items: center;
 }
 
-
 @media (min-width: 600px) {
-  #result-div {
-    padding: 0 9% 10% 9%;
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  #result-div, #summary-div {
+  #result-div {
+    padding: 0% 9% 10% 9%;
+  }
+  #result-div,
+  #summary-div {
     height: 480px;
     width: 50vw;
     border-radius: 30px;
-    
   }
-  
+
   #main-div {
     margin-top: 10%;
     height: 475px;
+    display: flex;
+    border-radius: 30px;
+    width: auto;
   }
   h5 {
     font-size: 1.4em;
@@ -152,22 +162,10 @@ color: hsl(39, 100%, 56%);
     font-size: 1.8em;
     font-weight: 600;
   }
-  .result-bubble {
-    padding-top: ;
-  }
   #continue-btn {
     margin: 10% 10%;
   }
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #main-div {
-    display: flex;
-    border-radius: 30px;
-    width: auto;
-  }
+  
   #result-circle {
     width: 185px;
     height: 185px;
@@ -183,7 +181,8 @@ color: hsl(39, 100%, 56%);
   }
 }
 @media (min-width: 700px) {
-  #result-div, #summary-div {
+  #result-div,
+  #summary-div {
     width: 350px;
   }
 }
